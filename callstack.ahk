@@ -17,6 +17,8 @@
 
 callstack(limit := -1) {
   stack := array()
+  if (limit >= 0)
+    stack.capacity := limit
 
   loop {
     e := exception("", -A_Index)
