@@ -26,7 +26,7 @@ callstack(limit := -1) {
       map(
         "file", e.file,
         "line", e.line,
-        "function", e.what
+        "func", e.what
       )
     )
   } until (A_Index-1 == limit || string(-A_Index) == e.what)
