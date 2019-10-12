@@ -22,7 +22,7 @@ callstack(limit := -1) {
 
   loop {
     e := exception("", -A_Index)
-    stack.push({"file": e.file, "line": e.line, "function": e.what})
+    stack.push({"file": e.file, "line": e.line, "func": e.what})
   } until (A_Index-1 == limit || -A_Index . "" == e.what)
   stack.pop()
   return stack
