@@ -5,8 +5,8 @@ Retrieves the current callstack.
 ```autohotkey
 stack := callstack(limit := -1)
 ```
-* `limit` – _integer_: The amount of callstack entires to return.
-  * if `limit` is positive or 0, `stack.length` equals `limit`.
+* `limit` – _integer_: The amount of callstack entries to return.
+  * If `limit` is positive or 0, `stack.length` equals `limit`.
 * `stack` – _array_ of _maps_: The current callstack (including the call to `callstack()` itself).
   * Each entry represents one entry in the callstack.
   * Each entry is a map. Each map has three keys:
