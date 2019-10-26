@@ -1,6 +1,8 @@
 # `callstack()`
 Retrieves the current callstack.
 
+A v1 version for this exists [here](https://github.com/SALZKARTOFFEEEL/callstack-legacy). I advise you to **not** use it if you can.
+
 ## Definition
 ```autohotkey
 stack := callstack(limit := -1)
