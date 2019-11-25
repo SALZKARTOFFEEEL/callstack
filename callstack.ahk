@@ -6,7 +6,7 @@
 
   callstack() returns an array of maps that represents the callstack.
 
-  Each map has three keys: file, line, function.
+  Each map has three keys: file, line, func.
   The length of the array can be used to determine the stack size.
   You can limit the amount of array entries returned by passing limit.
 
