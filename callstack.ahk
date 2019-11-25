@@ -31,5 +31,22 @@ callstack(limit := -1) {
     )
   } until (A_Index-1 == limit || string(-A_Index) == e.what)
   stack.pop()
+
+  stack.defineMethod("toString", func("toString"))
+
   return stack
+
+  toString(callstack) {
+    str := ""
+    for (frame in callstack) {
+      if (A_Index != 1)
+        str .= "`n"
+      str .= (
+        "File: `"" frame["file"] "`"; "
+        "line: " frame["line"] "; "
+        "func: " frame["func"] "."
+      )
+    }
+    return str
+  }
 }
